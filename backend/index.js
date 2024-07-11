@@ -3,6 +3,7 @@ import cors from 'cors'
 const app = express()
 import { PrismaClient } from '@prisma/client'
 
+const port = process.env.PORT || 3001
 
 app.use(cors())
 app.use(express.json()) // garantir que o express entendera json
